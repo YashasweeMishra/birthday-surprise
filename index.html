@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="theme-color"
+      content="#fff7fa"
+    />
+    <meta
+      name="description"
+      content="A little birthday universe, made with love for someone very special."
+    />
+    <title>A Little Birthday Surprise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient" id="ambient" aria-hidden="true"></div>
+    <div class="bottle-layer" id="bottle-layer" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="wordmark" href="#welcome" aria-label="Back to the beginning">
+        <span class="wordmark-icon">✳</span>
+        <span>a little love note</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#message">The note</a>
+        <a href="#memories">Memories</a>
+        <a href="#story">Our story</a>
+        <a href="#surprise">A surprise</a>
+      </nav>
+      <button class="music-button" id="music-toggle" type="button" aria-pressed="false">
+        <span class="music-icon" aria-hidden="true">♫</span>
+        <span id="music-label">Play a little music</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="welcome section-shell" id="welcome">
+        <div class="welcome-wash wash-one"></div>
+        <div class="welcome-wash wash-two"></div>
+        <div class="welcome-content">
+          <p class="eyebrow"><span class="eyebrow-line"></span> a day made just for you <span class="eyebrow-line"></span></p>
+          <h1>Happy Birthday<br /><em>Sarthuuuu</em> <span class="pink-heart">♡</span></h1>
+          <p class="welcome-subtitle">Today, the whole little universe is celebrating you.</p>
+          <div class="hero-cake" aria-label="A birthday cake with glowing candles" role="img">
+            <span class="cake-sparkle sparkle-a">✦</span>
+            <span class="cake-sparkle sparkle-b">✧</span>
+            <span class="cake-sparkle sparkle-c">✧</span>
+            <div class="candles">
+              <span class="candle candle-one"><i></i></span>
+              <span class="candle candle-two"><i></i></span>
+              <span class="candle candle-three"><i></i></span>
+            </div>
+            <div class="cake-top"><span>♡</span><span>✦</span><span>♡</span></div>
+            <div class="cake-layer cake-layer-top"></div>
+            <div class="cake-layer cake-layer-bottom"></div>
+            <div class="cake-plate"></div>
+          </div>
+          <button class="button button-primary open-surprise" id="open-surprise" type="button">
+            Open Your Birthday Surprise <span aria-hidden="true">🎁</span>
+          </button>
+        </div>
+        <a class="scroll-cue" href="#message" aria-label="Scroll to the birthday message"><span></span> scroll a little</a>
+      </section>
+
+      <section class="message-section section-shell section-pad" id="message">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow"><span class="eyebrow-line"></span> a note from my heart <span class="eyebrow-line"></span></p>
+          <h2>Happy Birthday to<br /><em>My Favourite Human!</em> <span>🥹❤️</span></h2>
+        </div>
+        <article class="letter-card" data-reveal>
+          <div class="letter-decoration" aria-hidden="true">“</div>
+          <p class="letter-to" id="letter-to">For My Best Bro, 🫂❤️</p>
+          <div class="typewriter-copy" id="birthday-message" aria-live="polite"></div>
+          <span class="letter-signoff">Always got your back, brother. 🤜🏻🤛🏻♡</span>
+          <span class="letter-stamp" aria-hidden="true">with<br />love</span>
+        </article>
+      </section>
+
+      <section class="memories-section section-shell section-pad" id="memories">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow"><span class="eyebrow-line"></span> little moments, forever <span class="eyebrow-line"></span></p>
+          <h2>Some of my<br /><em>camera roll</em></h2>
+          <p class="section-intro">Some moments are too lovely to leave tucked away in a camera roll.</p>
+        </div>
+        <div class="memory-grid" id="memory-grid" aria-label="Our friendship photo gallery"></div>
+        <p class="gallery-hint" data-reveal><span>↗</span> tap any little memory to see it up close</p>
+      </section>
+
+      <section class="story-section section-shell section-pad" id="story">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow"><span class="eyebrow-line"></span> chapter after chapter <span class="eyebrow-line"></span></p>
+          <h2>Our friendship<br /><em>in little moments</em></h2>
+          <p class="section-intro">The best friendships are made of a thousand tiny beginnings.</p>
+        </div>
+        <div class="timeline" id="timeline"></div>
+        <div class="timeline-end" data-reveal>and so many more to come <span>♡</span></div>
+      </section>
+
+      <section class="reasons-section section-shell section-pad" id="reasons">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow"><span class="eyebrow-line"></span> just in case you forget <span class="eyebrow-line"></span></p>
+          <h2>Reasons you’re<br /><em>my favourite person</em></h2>
+          <p class="section-intro">15 little reasons you mean so much to me.</p>
+        </div>
+        <div class="reasons-grid" id="reasons-grid"></div>
+      </section>
+
+      <section class="gift-section section-shell section-pad" id="surprise">
+        <div class="gift-glow" aria-hidden="true"></div>
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow"><span class="eyebrow-line"></span> psst… there’s more <span class="eyebrow-line"></span></p>
+          <h2>There’s One More<br /><em>Thing for You...</em> 🎁</h2>
+          <p class="section-intro">A tiny gift, with a very big amount of love inside.</p>
+        </div>
+        <button class="gift-box" id="gift-box" type="button" aria-label="Open your surprise gift" aria-expanded="false">
+          <span class="gift-lid"><span class="gift-bow"></span></span>
+          <span class="gift-body"><span class="gift-ribbon"></span><span class="gift-heart">♡</span></span>
+          <span class="gift-shadow"></span>
+          <span class="gift-sparkle gift-sparkle-one">✦</span>
+          <span class="gift-sparkle gift-sparkle-two">✧</span>
+          <span class="gift-sparkle gift-sparkle-three">✧</span>
+        </button>
+        <p class="gift-instruction" id="gift-instruction">tap the little box to open it</p>
+        <div class="gift-reveal" id="gift-reveal" hidden>
+          <p class="eyebrow">just for you, always <span>♡</span></p>
+          <h3>A little piece of my heart.</h3>
+          <p>Whenever you need a reminder that you are loved, celebrated, and never doing life alone—come back to this moment. I’m always only a call, a laugh, or a ridiculous voice note away.</p>
+          <button class="button button-secondary" id="read-letter" type="button">Read My Little Letter <span>💌</span></button>
+        </div>
+      </section>
+
+      <section class="wish-section section-shell section-pad" id="wish">
+        <div class="wish-card" data-reveal>
+          <div class="balloons" aria-hidden="true"><span>🎈</span><span>🎈</span><span>🎈</span></div>
+          <p class="eyebrow"><span class="eyebrow-line"></span> make this one count <span class="eyebrow-line"></span></p>
+          <h2>Close your eyes<br /><em>for a surprise.</em></h2>
+          <div class="celebration-cake" id="celebration-cake" aria-label="Birthday cake with candles">
+            <div class="wish-candles"><span class="wish-candle"><i></i></span><span class="wish-candle"><i></i></span><span class="wish-candle"><i></i></span><span class="wish-candle"><i></i></span><span class="wish-candle"><i></i></span></div>
+            <div class="wish-cake-top"></div><div class="wish-cake-layer"></div><div class="wish-cake-plate"></div>
+          </div>
+          <button class="button button-primary" id="make-wish" type="button">Click here for a surprise <span>✨</span></button>
+          <p class="wish-message" id="wish-message" aria-live="polite"></p>
+          <figure class="wish-photo-reveal" id="wish-photo-reveal" hidden>
+            <img src="images/WhatsApp Image 2026-10-16 at 12.40.36 PM.jpeg" alt="Surprise photo" loading="lazy" />
+          </figure>
+          <div class="firework firework-one" aria-hidden="true"></div><div class="firework firework-two" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section class="final-section section-shell section-pad" id="final">
+        <div class="final-card" data-reveal>
+          <span class="final-heart" aria-hidden="true">♡</span>
+          <p class="eyebrow"><span class="eyebrow-line"></span> one last thing <span class="eyebrow-line"></span></p>
+          <h2>One Last Thing... <span>❤️</span></h2>
+          <div class="final-message">
+            <p>Years may pass, life may change, and we may get busy chasing our dreams, but I hope we always have reasons to smile when we think about our friendship.</p>
+            <p>Thank you for being you. Thank you for being a part of my story.</p>
+            <p>Today is your day, so smile a little more, laugh a little louder, and enjoy every second.</p>
+            <p class="final-birthday">Happy Birthday, Bestie! 🫂❤️🎂</p>
+          </div>
+          <p class="made-with-love">Made with lots of love, just for you. <span>💗</span></p>
+          <button class="button button-secondary replay-button" id="replay" type="button">Replay Our Little Surprise <span>✨</span></button>
+        </div>
+        <footer class="site-footer">a little birthday universe <span>♡</span> made with love</footer>
+      </section>
+    </main>
+
+    <dialog class="lightbox" id="lightbox" aria-label="Photo memory">
+      <button class="dialog-close" id="lightbox-close" type="button" aria-label="Close photo">×</button>
+      <img id="lightbox-image" src="" alt="" />
+      <p id="lightbox-caption"></p>
+    </dialog>
+
+    <dialog class="letter-dialog" id="letter-dialog" aria-labelledby="letter-dialog-title">
+      <button class="dialog-close" id="letter-close" type="button" aria-label="Close letter">×</button>
+      <div class="letter-dialog-inner">
+        <span class="letter-dialog-flower" aria-hidden="true">✿</span>
+        <p class="eyebrow">a little letter for you</p>
+        <h2 id="letter-dialog-title">To Sarthak, ❤️🫂</h2>
+        <p>I don't think I'll ever be able to explain how much your friendship means to me. From the first year of college to all the memories we've made together, you've become someone I'm genuinely grateful to have in my life.</p>
+        <p>There have been times when things weren't easy for me, when I was struggling with things I couldn't even explain properly, but your presence and support made those moments a little easier. Maybe you don't realise it, but the way you've stood by me has meant more than words could ever express. 🥹❤️</p>
+        <p>You're not just a friend I've made in college; you're someone I'll always be thankful that life introduced me to. I don't know where life will take us, how busy we'll get, or how much things will change, but I genuinely hope we never become strangers.</p>
+        <p>I want us to look back years from now, remember our college days, laugh at our stupid memories, and feel proud that we kept this friendship alive. No matter what happens, bhai, you'll always have a special place in my life.</p>
+        <p>Thank you for being Sarthak, and thank you for being a part of my story. ❤️🫂🫶🏻</p>
+        <p class="letter-dialog-signoff">Happy birthday, always. <span>♡</span></p>
+      </div>
+    </dialog>
+    <div class="confetti-layer" id="confetti-layer" aria-hidden="true"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
