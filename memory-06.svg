@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 620">
+  <defs><linearGradient id="a" x2="0.8" y2="1"><stop stop-color="#f4c8d8"/><stop offset="1" stop-color="#f1ddbd"/></linearGradient></defs>
+  <rect width="600" height="620" fill="url(#a)"/><circle cx="300" cy="300" r="226" fill="none" stroke="#fff" stroke-opacity=".32" stroke-width="2"/><circle cx="300" cy="300" r="182" fill="none" stroke="#fff" stroke-opacity=".22" stroke-width="2"/>
+  <path d="M0 457q145-74 300 0t300 0v163H0Z" fill="#fff" opacity=".31"/>
+  <text x="300" y="310" text-anchor="middle" font-family="Georgia,serif" font-size="75" fill="#fff" opacity=".9">✧</text>
+  <text x="300" y="554" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" letter-spacing="5" fill="#876b75">YOUR PHOTO HERE</text>
+</svg>
