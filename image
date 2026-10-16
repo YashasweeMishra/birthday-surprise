@@ -1,0 +1,6 @@
+<div class="memories">
+   <h2>Memories</h2>
+   <img src="images/cake.jpg" alt="Birthday cake" width="300" />
+   <img src="images/friends.jpg" alt="Friends celebrating" width="300" />
+   <img src="images/party.jpg" alt="Party decorations" width="300" />
+</div>
